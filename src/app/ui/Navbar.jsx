@@ -3,6 +3,8 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
+import Dropdown from "./PricingDropdown";
+import ServicesDropdown from "./Dropdown";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [color, setColor] = useState('transparent');
@@ -45,10 +47,10 @@ const Navbar = () => {
             <Link href="/#gallery">Gallery</Link>
           </li>
           <li className="p-4">
-            <Link href="/services">Services</Link>
+            <Dropdown textColor={textColor} />
           </li>
           <li className="p-4">
-            <Link href="/contact">Contact</Link>
+            <ServicesDropdown textColor={textColor} />
           </li>
         </ul>
         {/* Mobile Button */}

@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../ui/Hero'
+import Hero from '../ui/Hero';
 import Portfolio from '../ui/Portfolio';
 const page = () => {
   return (
